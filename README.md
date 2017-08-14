@@ -9,7 +9,7 @@ To run:
 * Create a DynamoDB table in AWS to contain water level data
 * Create a new Lambda function using Node
 * Zip the contents of this repository, upload the zip file to Lambda and configure Lambda to work
-* Use CloudWatch to create a trigger so that it runs the Lambda function every hour
+* Use CloudWatch to create a trigger so that it runs the Lambda function every 10 minutes (Cron express is "7/10 * * * ? *")
 
 Libraries:
  * Node.js

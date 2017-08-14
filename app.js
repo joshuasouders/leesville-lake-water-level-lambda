@@ -21,7 +21,7 @@ exports.handler = (event, context, callback) => {
                 Item:{
                     "datetime": datetime.toString(),
                     "station": station,
-                    "elevation": Number($('#main-content').children('div').children('table').first().children('tbody').children().last().children().last().text())
+                    "elevation": Number($('#main-content').children('div').children('table').first().children('tbody').children().last().children().eq(2).text())
                 }
             };
 
